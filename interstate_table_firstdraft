@@ -9,11 +9,12 @@
     <link rel="stylesheet" type="text/css" href="https://www.andrewswxcenter.com/files/style.css">
 
     <script src="tsorter.min.js" type="text/javascript"></script>
-
+    
     <script>
 
 function init() {
     var sorter = tsorter.create('interstates');
+    var sorter2 = tsorter.create('interstatecounties');
 
 }
 
@@ -71,15 +72,15 @@ addFunctionOnWindowLoad(GetClock);
 
 
 
-<table class="interstates">
+<table id="interstates" class="interstates">
 <thead>
 <tr>
 <th>Name</th>
-<th>Mean Daily Ridership*</th>
-<th>Length Within North Carolina (miles)</th>
-<th>Riders Per Mile</th>
+<th data-tsorter="numeric">Mean Daily Ridership*</th>
+<th data-tsorter="numeric">Length Within North Carolina (miles)</th>
+<th data-tsorter="numeric">Riders Per Mile</th>
 <th>Orientation</th>
-<th>Built</th>
+<th data-tsorter="numeric">Built</th>
 <th>S/W Terminus</th>
 <th>N/E Terminus</th>
 </tr>
@@ -350,28 +351,28 @@ addFunctionOnWindowLoad(GetClock);
 
 
 
-<table class="interstatecounties">
+<table id="interstatecounties" class="interstatecounties">
 <thead>
 <tr>
 <th>County</th>
-<th>I-40</th>
-<th>I-85</th>
-<th>I-95</th>
-<th>I-77</th>
-<th>I-73</th>
-<th>I-74</th>
-<th>I-26</th>
-<th>I-485</th>
-<th>I-540</th>
-<th>I-795</th>
-<th>I-440</th>
-<th>I-240</th>
-<th>I-140</th>
-<th>I-840</th>
-<th>I-277</th>
-<th>I-95 Bus</th>
-<th>I-85 Bus</th>
-<th>I-40 Bus</th>
+<th data-tsorter="numeric">I-40</th>
+<th data-tsorter="numeric">I-85</th>
+<th data-tsorter="numeric">I-95</th>
+<th data-tsorter="numeric">I-77</th>
+<th data-tsorter="numeric">I-73</th>
+<th data-tsorter="numeric">I-74</th>
+<th data-tsorter="numeric">I-26</th>
+<th data-tsorter="numeric">I-485</th>
+<th data-tsorter="numeric">I-540</th>
+<th data-tsorter="numeric">I-795</th>
+<th data-tsorter="numeric">I-440</th>
+<th data-tsorter="numeric">I-240</th>
+<th data-tsorter="numeric">I-140</th>
+<th data-tsorter="numeric">I-840</th>
+<th data-tsorter="numeric">I-277</th>
+<th data-tsorter="numeric">I-95 Bus</th>
+<th data-tsorter="numeric">I-85 Bus</th>
+<th data-tsorter="numeric">I-40 Bus</th>
 <th>TOTAL</th>
 </tr></thead>
 <tbody><tr>
